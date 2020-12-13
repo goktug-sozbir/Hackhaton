@@ -1,0 +1,112 @@
+/* 
+    Dokuman  : cv web sablon
+    Tarih    : 07.Ocak.2013, 12.55
+    Yazar    : Arabirim Internet Hizmetleri ~ www.arabirim.com.tr
+    Tarayici : IE7, IE8, IE9, FIREFOX, CHORME, OPERA, SAFARI
+*/
+
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; font-weight: normal; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body{line-height: 1;} ol, ul{list-style: none;} blockquote, q {quotes: none;} blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;} table {border-collapse: collapse; border-spacing: 0;}
+    body{ background-color:#fff;  font-family: 'Roboto','Arial', 'Tahoma', serif; color: #4b4b4b;}
+    i.icon{background-image: url('../resim/abSprite.png'); background-position: 0 0; background-repeat: no-repeat; display: block; position: absolute;}
+    input[type="buton"], input[type="submit"] {cursor:pointer;}
+    input[type="text"], input[type="password"], textarea {outline:0;}
+    a            {text-decoration: none;}
+    a:hover      {text-decoration: none;}
+    .ortala      {margin: 0px auto;}
+    .sol         {float: left;}
+    .sag         {float: right;}
+    .aktif       {display: block;}
+    .pasif       {display: none;}
+    .borderTemiz {border:0 !important;}
+    .temiz:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} .temiz { display: inline-block;} html[xmlns] .temiz { display: block;} * html .temiz {height: 1%;}
+/* ================================================ */
+/* ! @font-face                                     */
+/* ================================================ */
+    @font-face {
+        font-family: 'AL';
+        src: url('al-arabirim.eot');
+        src: url('al-arabirim.eot?#iefix') format('embedded-opentype'),
+             url('al-arabirim.woff') format('woff'),
+             url('al-arabirim.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    #cerceve{width: 944px;}
+    /* ================================================ */
+    /* ! header                                         */
+    /* ================================================ */
+        header{width: 100%; padding: 39px 0 0 0;}
+            header h1{font-size: 30px; line-height: 1.2;font-weight: 300;}
+                header h1 span{font-size: 14px; color: #999999;line-height: 1.2;}
+                header h1 a{font-size: 14px; color: #999999;  line-height: 1.2;}
+                header h1 a:hover{color: #cd1821;}
+            .iletisim{}
+                .iletisim span{position: relative; font-size: 12px; color: #a4a4a4; display: block; line-height: 16px; padding-left: 50px; height: 45px;}
+                .iletisim span.mail{padding: 0 0 11px 37px;}
+                    .iletisim span i{font-size:30px; position: absolute; left: 13px;}
+                .iletisim span.telefon{}
+                    .iletisim span.telefon i{left: 5px; top:0;}
+                
+    /* ================================================ */
+    /* ! orta                                           */
+    /* ================================================ */
+        .orta{width: 100%;}
+            .alan1{padding: 0 0 40px 0; position: relative; clear: both; height: 100%;}
+                .imza{ right:0; bottom:-10px;  position: absolute;}
+                .alan1 h3{font-size: 16px; color: #cd1821; line-height: 24px; border-bottom: 1px solid #d2d2d2; position: relative;}
+                    .alan1 h3 i.fa{position: absolute; left: -22px; top:0px; top: 4px;}
+                    .alan1 p{font-size: 14px; line-height: 1.4; padding:15px 0;}
+                        .alan1 p a{color: inherit; text-decoration: underline;}
+                        .alan1 p a:hover{color: #cd1821;}
+                    ul.kisisel{padding: 12px 0 0 0;}
+                        ul.kisisel li{font-size: 12px; line-height: 24px}
+                            ul.kisisel li label{width: 181px; display: inline-block; float:left; color: #010101; position: relative;}
+                                ul.kisisel li label:after{content: ":"; position: absolute; right: 0;}
+                            ul.kisisel li span{color: #666666; padding: 0 0 0 10px;} 
+                    #resim{padding: 14px 0 0 0;}
+                    ul.egitim{padding: 12px 0 0 0;}
+                        ul.egitim ul{width: 100%;}
+                            ul.egitim li{width: 100%; overflow: hidden;}
+                                ul.egitim li ul{width: 100%; overflow: hidden;}
+                                    ul.egitim li ul li{width: 150px; float:left; padding: 0 30px 0 0;}
+                                        ul.egitim li ul li span{font-size: 12px; line-height: 16px;}
+                                        ul.egitim li ul li span.tarih{height: 14px; font-size: 10px; line-height: 14px; color: #fff; font-family: 'Arial'; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background-color: #cd1821; padding: 0 4px;}
+                                        ul.egitim li ul li span.nokta{position: relative; top: -3px; padding: 0 2px;}
+                                        ul.egitim li ul li span.birim{display: block;padding: 6px 0 0 0;}
+                                        ul.egitim li ul li span.bolum{ color: #090909; padding: 6px 0 20px 0; display: block;}
+                    ul.deneyimler{padding: 12px 0 0 0;}
+                        ul.deneyimler li{width: 100%; overflow: hidden; margin: 10px 0 0 0;  display: table; padding: 20px 0;}
+                            .isBilgi{display: table-cell; vertical-align: middle;}
+                                .isBilgi span.tarih{height: 16px; font-size: 11px; line-height: 16px; color: #fff; font-family: 'Arial'; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; background-color: #cd1821; padding: 0 4px;}
+                                .isBilgi span.gorev{font-size: 11px; line-height: 16px; color: #6f6f6f; position: relative; padding: 0 16px 0 0;}
+                                    .isBilgi span.gorev i{width: 11px; height: 7px; background-position: -18px -41px; right: 0; top: 4px;}
+                                .isBilgi span.isVeren{font-size: 13px; line-height: 20px; display: block; padding: 4px 0 0 0;}
+                                .isBilgi span.is{font-size: 12px; line-height: 16px; color: #090909; display: block;}
+                                .isBilgi p{font-size: 11px; line-height: 1.5; padding: 0; color: #090909; display: block;}
+                                    .isBilgi  a{color: #0083fe; display: block;}
+                            .isResim{display: table-cell;  vertical-align: middle; width: 40%; text-align: right;}
+                                .isResim im{display: block;}
+                    ul.yeteneklerim{padding: 12px 0 0 0; float: left; width: 314px;}
+                        ul.yeteneklerim li{width: 100%; height: 29px; position: relative; float: left;}
+                            ul.yeteneklerim li span{width: 170px;  float:left; display: inline-block; font-size: 12px; color: #303030;line-height: 29px;}
+                            .seviye{float:left; position: relative;}
+                                .seviye i{ float: left; color: #cd1821;margin: 7px 7px 0 0; }
+                                .seviye i.bilmiyor{background-position: -50px -42px;}
+            .sosyalAglar{ text-align: left;}
+                .sosyalAglar a{color: #a4a4a4; transition: all ease-in .2s; display: inline-block; margin: 20px 5px 0 5px;}
+                .sosyalAglar a:first-child{margin-left:0;}
+                .sosyalAglar a:hover{color: #cd1821;}
+                    .sosyalAglar a i{ font-size:40px; }
+    /* ================================================ */
+    /* ! footer                                         */
+    /* ================================================ */
+        footer{width: 100%;}
+            footer a{width: 166px;  display: inline-block; margin: 18px 0;}
+                footer a img{width: 100%;display: block;}
+
+
+                
+                
+                
+                
